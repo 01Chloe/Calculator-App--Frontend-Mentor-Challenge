@@ -1,0 +1,47 @@
+@use "./assets/styles/variables" as vars;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+body {
+  padding: 0.5rem;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  &.theme-one {
+    background-color: vars.$fThemeMainBg;
+    color: vars.$fThemeLightTxt;
+  }
+  &.theme-two {
+    background-color: vars.$sThemeMainBg;
+    color: vars.$sThemeDarkTxt;
+  }
+  &.theme-three {
+    background-color: vars.$tThemeMainBg;
+    color: vars.$tThemeYellowTxt;
+  }
+}
+@media screen and (min-width: vars.$tablet) {
+  body {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: vars.$desktop) {
+  body {
+    padding: 2rem 10rem;
+  }
+}
+@media screen and (min-width: vars.$largeDesktop) {
+  body {
+    padding: 2rem 15rem;
+  }
+}

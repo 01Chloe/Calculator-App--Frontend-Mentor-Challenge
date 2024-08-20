@@ -1,0 +1,22 @@
+@use "./variables" as vars;
+
+.screen {
+  width: 100%;
+  height: 80px;
+  border-radius: 13px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: background-color 0.1s ease-in-out;
+  &.theme-one {
+    background-color: vars.$fThemeScreenBg;
+  }
+  &.theme-two {
+    background-color: vars.$sThemeScreenBg;
+  }
+  &.theme-three {
+    background-color: vars.$tThemebg;
+  }
+}

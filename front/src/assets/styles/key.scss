@@ -1,0 +1,95 @@
+@use "./variables" as vars;
+
+.key {
+  border: none;
+  border-radius: 8px;
+  color: inherit;
+  margin: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  cursor: pointer;
+  &.theme-one {
+    background-color: vars.$fThemeGrayishKey;
+    color: vars.$fThemeToggleBg;
+    border-bottom: 4px solid vars.$fThemeGrayishKeyShadow;
+    &:hover {
+      background-color: #ffffff;
+    }
+    &.equal {
+      background-color: vars.$fThemeRedKey;
+      color: inherit;
+      border-bottom: 4px solid vars.$fThemeRedKeyShadow;
+      &:hover {
+        background-color: #f96d5a;
+      }
+    }
+    &.raz {
+      background-color: vars.$fThemeBlueKey;
+      color: inherit;
+      border-bottom: 4px solid vars.$fThemeBlueKeyShadow;
+      &:hover {
+        background-color: #a2b2e0;
+      }
+    }
+  }
+  &.theme-two {
+    background-color: vars.$sThemeGrayishKey;
+    border-bottom: 4px solid vars.$sThemeGrayishKeyShadow;
+    &:hover {
+      background-color: #ffffff;
+    }
+    &.equal {
+      background-color: vars.$sThemeOrangeKey;
+      color: vars.$sThemeLightTxt;
+      border-bottom: 4px solid vars.$sThemeOrangeKeyShadow;
+      &:hover {
+        background-color: #ff8b38;
+      }
+    }
+    &.raz {
+      background-color: vars.$sThemeBlueKey;
+      color: vars.$sThemeLightTxt;
+      border-bottom: 4px solid vars.$sThemeBlueKeyShadow;
+      &:hover {
+        background-color: #63b5bc;
+      }
+    }
+  }
+  &.theme-three {
+    background-color: vars.$tThemeDarkVioletKey;
+    border-bottom: 4px solid vars.$tThemeDarkVioletKeyShadow;
+    &:hover {
+      background-color: #6a34ad;
+    }
+    &.equal {
+      background-color: vars.$tThemeBlueKey;
+      color: vars.$tThemeMainBg;
+      border-bottom: 4px solid vars.$tThemeBlueKeyShadow;
+      &:hover {
+        background-color: #94fef8;
+      }
+    }
+    &.raz {
+      background-color: vars.$tThemeVioletKey;
+      color: vars.$tThemeLightTxt;
+      border-bottom: 4px solid vars.$tThemeVioletKeyShadow;
+      &:hover {
+        background-color: #8530b0;
+      }
+    }
+  }
+  &.raz {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  &.reset {
+    grid-column: 1/3;
+  }
+  &.equal {
+    grid-column: 3/5;
+  }
+}

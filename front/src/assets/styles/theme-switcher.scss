@@ -1,0 +1,99 @@
+@use "./variables" as vars;
+
+.theme-switcher-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  .theme-switcher-txt {
+    font-size: 0.35rem;
+    letter-spacing: 0.5px;
+    margin-right: 1rem;
+  }
+  .theme-switcher-content {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    .theme-switcher-label {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .theme-switcher-number {
+        font-size: 0.5rem;
+      }
+    }
+    .theme-switcher-toggle-btn {
+      position: relative;
+      width: 100%;
+      height: 26px;
+      border-radius: 16px;
+      padding: 5px;
+      margin: 5px 0 0;
+      display: flex;
+      justify-content: space-between;
+      &.theme-one {
+        background-color: vars.$fThemeToggleBg;
+      }
+      &.theme-two {
+        background-color: vars.$sThemeToggleBg;
+      }
+      &.theme-three {
+        background-color: vars.$tThemebg;
+      }
+      .theme-switcher-btn {
+        opacity: 0;
+        border: none;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+      .theme-switcher-toggle {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out,
+          background-color 0.3s ease-in-out;
+        cursor: pointer;
+        &.theme-one {
+          background-color: vars.$fThemeRedKey;
+          &:hover {
+            background-color: #f96c5b;
+          }
+        }
+        &.theme-two {
+          background-color: vars.$sThemeOrangeKey;
+          transform: translateX(26px);
+          &:hover {
+            background-color: #fe8a38;
+          }
+        }
+        &.theme-three {
+          background-color: vars.$tThemeBlueKey;
+          transform: translateX(51px);
+          &:hover {
+            background-color: #94fef8;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: vars.$mobile) {
+  .theme-switcher-container {
+    width: 35%;
+  }
+}
+@media screen and (min-width: vars.$desktop) {
+  .theme-switcher-container {
+    width: 45%;
+  }
+}
+@media screen and (min-width: vars.$largeDesktop) {
+  .theme-switcher-container {
+    width: 60%;
+  }
+}

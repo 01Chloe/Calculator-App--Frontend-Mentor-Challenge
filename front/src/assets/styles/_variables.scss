@@ -1,0 +1,44 @@
+// theme 1
+$fThemeMainBg: hsl(222, 26%, 31%);
+$fThemeToggleBg: hsl(223, 31%, 20%);
+$fThemeScreenBg: hsl(224, 36%, 15%);
+$fThemeBlueKey: hsl(225, 21%, 49%);
+$fThemeBlueKeyShadow: hsl(224, 28%, 35%);
+$fThemeRedKey: hsl(6, 63%, 50%);
+$fThemeRedKeyShadow: hsl(6, 70%, 34%);
+$fThemeGrayishKey: hsl(30, 25%, 89%);
+$fThemeGrayishKeyShadow: hsl(28, 16%, 65%);
+$fThemeDarkTxt: hsl(221, 14%, 31%);
+$fThemeLightTxt: hsl(0, 0%, 100%);
+
+// theme 2
+$sThemeMainBg: hsl(0, 0%, 90%);
+$sThemeToggleBg: hsl(0, 5%, 81%);
+$sThemeScreenBg: hsl(0, 0%, 93%);
+$sThemeBlueKey: hsl(185, 42%, 37%);
+$sThemeBlueKeyShadow: hsl(185, 58%, 25%);
+$sThemeOrangeKey: hsl(25, 98%, 40%);
+$sThemeOrangeKeyShadow: hsl(25, 99%, 27%);
+$sThemeGrayishKey: hsl(45, 7%, 89%);
+$sThemeGrayishKeyShadow: hsl(35, 11%, 61%);
+$sThemeDarkTxt: hsl(60, 10%, 19%);
+$sThemeLightTxt: hsl(0, 0%, 100%);
+
+// theme 3
+$tThemeMainBg: hsl(268, 75%, 9%);
+$tThemebg: hsl(268, 71%, 12%);
+$tThemeVioletKey: hsl(281, 89%, 26%);
+$tThemeVioletKeyShadow: hsl(285, 91%, 52%);
+$tThemeBlueKey: hsl(176, 100%, 44%);
+$tThemeBlueKeyShadow: hsl(177, 92%, 70%);
+$tThemeDarkVioletKey: hsl(268, 47%, 21%);
+$tThemeDarkVioletKeyShadow: hsl(290, 70%, 36%);
+$tThemeYellowTxt: hsl(52, 100%, 62%);
+$tThemeDarkTxt: hsl(198, 20%, 13%);
+$tThemeLightTxt: hsl(0, 0%, 100%);
+
+// breakpoints
+$mobile: 450px;
+$tablet: 680px;
+$desktop: 1024px;
+$largeDesktop: 1244px;
